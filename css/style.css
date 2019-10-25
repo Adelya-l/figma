@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+a, a:hover{
+    text-decoration: none;
+}
+button{
+    outline: none;
+    border: none;
+}
+a, ul, li{
+    display: block;
+    color: #CBCFD4;
+}
+/*##################*/
+header{
+    padding-top: 50px;
+}
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin: auto;
+}
+.left-menu li{
+    margin-right: 45px;
+}
+.right-menu li:first-child{
+    margin-right: 35px;
+    margin-left: auto;
+}
+.right-menu{
+    margin-left: auto;
+}
+.menu a{
+    color:#212121;
+    font-weight: 500;
+}
+.logo img{
+    width: 201px;
+}
+.cart{
+    display:flex;
+    align-items: center;
+    margin-left: auto;
+}
+.cart svg{
+    margin-right: 30px;
+}
+.cart-count{
+    position: relative;
+    display: block;
+    width:33px;
+    height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background:#D7B399;
+}
+.cart-count:before {
+    content: '';
+    position: absolute;
+    left: -18px;
+    top:0;
+    border: 8px solid transparent;
+    border-right:10px solid #D7B399;
+}
+.header-content{
+    padding: 165px 0 150px;
+}
+.offer-description{
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+}
+.offer-title{
+    font-size: 55px;
+    line-height: 67px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 25px 0 40px;
+}
+.btn{
+    text-transform: uppercase;
+    background: #D7B399;
+    color: white;
+    text-align: center;
+    padding: 15px 32px;
+}
+.header-offers .btn{
+    width: 240px;
+}
+.header-item{
+    display: flex;
+    justify-content: space-between;
+}
+.header-hero{
+    position: relative;
+}
+.offer-price{
+    position: absolute;
+    right: 0;
+    top: 30px;
+    text-align:right;
+}
+.offer-price .old-price{
+    font-size: 24px;
+    font-weight: 700;
+}
+.offer-price .new-price{
+    font-size: 51px;
+    font-weight: 700;
+    color: #D84033;
+}
+.free-shipping{
+    background: #212121;;
+}
+.delivery{
+    padding: 80px 0 80px 0;
+}
+.delivery h2 strong{
+    font-weight:600;
+}
+.delivery h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    font-weight:initial ;
+    color:#ffffff;
+}
+.delivery span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 67px;
+    color:#ffffff;
+}
+/*коллекция*/
+
+#collection{
+    padding: 55px 0;
+    position: relative;
+}
+#collection:before{
+    content: '';
+    position:absolute;
+    left: 0;
+    top:0;
+    width: 50%;
+    height: 100%;
+    background: #F9F6F1;
+}
+#collection:after{
+    content: '';
+    position:absolute;
+    right: 0;
+    top:0;
+    width: 50%;
+    height: 100%;
+    background: #F4F4F4;
+}
+.clothes{
+    width: 550px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+.clothes h3{
+    margin: 25px 0 ;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.clothes h3 strong{
+    font-weight: 500
+}
+.clothes span{
+    font-weight: 300;
+}
+.clothes p{
+    font-size: 14px;
+}
+.clothes img{
+    position: absolute;
+    width: 155px;
+    height: 171px;
+    left: 313px;
+    top: 29px;
+    object-fit: cover;
+}
+.clothes a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 80px;
+    margin-top: 40px;
+    background: #D7B399;
+}
+/*платья*/
+
+.clothes-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.clothes-item{
+    background-size: contain;
+    background-repeat:no-repeat;
+    position: relative;
+    width: 25%;
+    height: 236px;
+}
+.clothes-item p{
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    bottom: 20px;
+    left: 22px;
+}
+/*модельчики;)*/
+#new-models{
+    z-index: 2;
+}
+.text{
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    padding: 130px 0;
+    text-transform: uppercase;
+}
+.models{
+    display: flex;
+    position: relative;
+}
+.model:before{
+    content: '';
+    position: absolute;
+    border-top:2px solid #D7B399;
+    border-left:2px solid #D7B399;
+    left: -22px;
+    bottom: 190px;
+    height: 35px;
+    width: 35px;
+}
+.model:after{
+    content: '';
+    position: absolute;
+    border-top: 2px solid #D7B399;
+    border-right:2px solid #D7B399;
+    right: -22px;
+    bottom: 190px;
+    height: 35px;
+    width: 35px;
+}
+.model span:before{
+    content:'';
+    position: absolute;
+    border-bottom: 2px solid #D7B399;
+    border-left: 2px solid #D7B399;
+    height: 35px;
+    width: 35px;
+    bottom: -85px;
+    left: -22px;
+}
+.model span:after{
+    content:'';
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-bottom: 2px solid #D7B399;
+    border-right: 2px solid #D7B399;
+    right: -22px;
+    bottom: -85px;
+}
+.model{
+    position: relative;
+    background-repeat: no-repeat;
+    width: 205px;
+    height: 211px;
+    margin-right: 72px;
+}
+.model h2{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+}
+.model p{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #D7B399;
+}
+.div-btn{
+    padding: 80px 0 90px;
+}
+.div-btn .btn{
+    font-weight: 500;
+    width: 228px;
+    margin: 5% auto;
+}
+/*скидки*/
+.discounts .container{
+    display: flex;
+}
+.discounts{
+    margin: 40px 0;
+    width: 1200px;
+    height: 180px;
+    background: #212121;
+    color:#ffffff;
+}
+.h1{
+    margin-top: 45px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+.gifts .email{
+    border: none;
+    padding: 13px 20px 12px;
+    right: 100px;
+    width: 255px;
+    height: 40px;
+    background: #F9F6F1;
+}
+.gif .submit{
+    margin-left: 35px;
+}
+.submit{
+    text-transform: uppercase;
+    padding: 12px ;
+    width: 185px;
+    height: 40px;
+    color: white;
+    background: #D7B399;
+}
+/*конец крч*/
+#footer{
+    padding: 80px 0 80px;
+    width: 1200px;
+    height: 354px;
+    background: #212121;
+}
+.about{
+    display: flex;
+}
+.list{
+    line-height: 35px;
+    display: flex;
+}
+.list-links{
+    margin-left: 67px;
+}
+.list-links .list-title{
+    color: white;
+}
+.list .list-links .links-link{
+    line-height: 19px;
+}
+.picture p{
+    font-size: 14px;
+    line-height: 22px;
+    color: white;
+}
+.the-end{
+    margin: 134px 0 20px;
+}
+.end{
+    background: white;
+    display: flex;
+    justify-content:space-around;
+}
+.gif{
+    display: flex;
+    padding: 36px;
+}
+.links-link svg{
+    position: relative;
+    right: 25px;
+    bottom: 18px;
+}
+.links-link{
+    margin: 0;
+    line-height: 19px;
+}
+.lists{
+    margin-left: 72px;
+}
+.list-lin .list-title{
+    margin-left: 52px;
+    color: white;
+}
